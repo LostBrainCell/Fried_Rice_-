@@ -1,21 +1,32 @@
 // Global Variables
-
+float ssSpaceBarX, ssSpaceBarY, ssSpaceBarWidth, ssSpaceBarHeight;
 int appWidth, appHeight, smallerDimension;
 Boolean OS_On=false;
+PFont Calibri;
 //
 void setup() {
-  size(900, 700); //fullScreen(), displayWidth & displayHeight, leads to ScreenChecker()
+  size(600, 400); //fullScreen(), displayWidth & displayHeight, leads to ScreenChecker()
   appWidth = width; //displayWidth
   appHeight = height; //displayHeight
   //
   displayAlgorithm();
-  
+  textSetup();
   //
+  //Text Setup
+  //Population
+  float centerX=appWidth*1/2, centerY=appHeight*1/2;
+  ssSpaceBarWidth = appWidth*1/2;
+  ssSpaceBarHeight = appHeight*1/10;
+  ssSpaceBarX = centerX - ssSpaceBarWidth*1/2;
+  ssSpaceBarY = centerY - ssSpaceBarHeight*1/2;
+  //
+  
+  //DIVS
+  //rect( ssSpaceBarX, ssSpaceBarY, ssSpaceBarWidth, ssSpaceBarHeight );
 } //End setup
 
 void draw() {
-  splashScreen();
-  if ( OS_On == true ) background(255);
+  if ( OS_On == true ) splashScreen();
 }//End draw()
 
 void keyPressed() {

@@ -8,6 +8,8 @@ void splashScreen() {
    - Any other instructions
    - Splash Screen Details
    */
-   background(255); //Testing only, not night mode friendly, full BLUE
+   background(0); //Testing only, not night mode friendly, full BLUE
+   //
+   splashScreenText(); //See Text
    //
 } //End Splash Screen
