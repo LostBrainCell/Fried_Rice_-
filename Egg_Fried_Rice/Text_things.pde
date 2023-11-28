@@ -2,7 +2,6 @@
 int size;
 // Separtion between colors
 color DarkBlue=#1F12B4;
-color resetColour=#FFFFFF;
 //
 String spaceBar = "Press Space to Start";
 //
@@ -16,7 +15,7 @@ void PreCodeText() {
 } //End Pre Code Text
 //
 void splashScreenText() {
-  size = 20;
+  size = 25;
   textFont(Calibri, size);
   text( spaceBar, ssSpaceBarX, ssSpaceBarY, ssSpaceBarWidth, ssSpaceBarHeight );
   //No fill thing
